@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #556270, #4ECDC4);
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.box #text {
+    width: 100%;
+    height: 50px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin-bottom: 15px;
+    transition: border 0.2s ease;
+}
+
+.box #text:focus {
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
+}
+
+.box .qrbox {
+    width: 100%;
+    height: 320px;
+    margin: 10px 0 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px dashed #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .qrbox img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: contain;
+}
+
+.box #generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.box #generator:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: translateY(-2px);
+}
+
+.box #generator:active {
+    transform: scale(0.96);
+}
